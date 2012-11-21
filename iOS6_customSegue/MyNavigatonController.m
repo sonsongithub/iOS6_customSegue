@@ -16,12 +16,12 @@
 
 - (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
 	NSLog(@"%@", identifier);
-	if ([identifier isEqualToString:@"backFromView2"]) {
+	if ([identifier isEqualToString:@"backFromSecond"]) {
 		return [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^(){
 			[self popToViewController:toViewController animated:NO];
 		}];
 	}
-	else if ([identifier isEqualToString:@"backFromView3"]) {
+	else if ([identifier isEqualToString:@"backFromThird"]) {
 		return [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^(){
 			[self popToViewController:toViewController animated:YES];
 		}];

@@ -10,4 +10,6 @@
 
 @interface MyDismissingSegue : UIStoryboardSegue
 
+@property (nonatomic, strong) UIImageView *sourceViewImageView;
+
 @end
