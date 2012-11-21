@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140E832D165C98C100CAA835 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140E832C165C98C100CAA835 /* QuartzCore.framework */; };
 		140F7433165ADC5900E8D912 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140F7432165ADC5900E8D912 /* UIKit.framework */; };
 		140F7435165ADC5900E8D912 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140F7434165ADC5900E8D912 /* Foundation.framework */; };
 		140F7437165ADC5900E8D912 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140F7436165ADC5900E8D912 /* CoreGraphics.framework */; };
@@ -17,13 +18,21 @@
 		140F7447165ADC5900E8D912 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 140F7446165ADC5900E8D912 /* Default@2x.png */; };
 		140F7449165ADC5900E8D912 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 140F7448165ADC5900E8D912 /* Default-568h@2x.png */; };
 		140F744C165ADC5900E8D912 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140F744A165ADC5900E8D912 /* MainStoryboard.storyboard */; };
-		140F7457165ADCB700E8D912 /* SourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F7456165ADCB700E8D912 /* SourceViewController.m */; };
-		140F745A165ADCC000E8D912 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F7459165ADCC000E8D912 /* DestinationViewController.m */; };
 		140F745D165ADDBB00E8D912 /* MyPresentingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F745C165ADDBB00E8D912 /* MyPresentingSegue.m */; };
 		140F7460165ADEDD00E8D912 /* MyDismissingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 140F745F165ADEDD00E8D912 /* MyDismissingSegue.m */; };
+		14660602165CC14B00A0931A /* MyNavigatonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14660601165CC14B00A0931A /* MyNavigatonController.m */; };
+		14660609165CC49E00A0931A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14660608165CC49E00A0931A /* FirstViewController.m */; };
+		1466060C165CC4A800A0931A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466060B165CC4A800A0931A /* SecondViewController.m */; };
+		1466060F165CC4B200A0931A /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466060E165CC4B200A0931A /* ThirdViewController.m */; };
+		14660612165CC50A00A0931A /* PresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14660611165CC50A00A0931A /* PresentingViewController.m */; };
+		14660615165CC51700A0931A /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14660614165CC51600A0931A /* PresentedViewController.m */; };
+		1466061A165CC55700A0931A /* MyPopSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 14660619165CC55700A0931A /* MyPopSegue.m */; };
+		1466061D165CC56D00A0931A /* MyPushSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466061C165CC56D00A0931A /* MyPushSegue.m */; };
+		14660620165CC6C500A0931A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466061F165CC6C500A0931A /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140E832C165C98C100CAA835 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		140F742E165ADC5900E8D912 /* iOS6_customSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS6_customSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		140F7432165ADC5900E8D912 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		140F7434165ADC5900E8D912 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,14 +47,28 @@
 		140F7446165ADC5900E8D912 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		140F7448165ADC5900E8D912 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		140F744B165ADC5900E8D912 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		140F7455165ADCB700E8D912 /* SourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SourceViewController.h; sourceTree = "<group>"; };
-		140F7456165ADCB700E8D912 /* SourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SourceViewController.m; sourceTree = "<group>"; };
-		140F7458165ADCC000E8D912 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
-		140F7459165ADCC000E8D912 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
 		140F745B165ADDBB00E8D912 /* MyPresentingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPresentingSegue.h; sourceTree = "<group>"; };
 		140F745C165ADDBB00E8D912 /* MyPresentingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPresentingSegue.m; sourceTree = "<group>"; };
 		140F745E165ADEDD00E8D912 /* MyDismissingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDismissingSegue.h; sourceTree = "<group>"; };
 		140F745F165ADEDD00E8D912 /* MyDismissingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDismissingSegue.m; sourceTree = "<group>"; };
+		14660600165CC14B00A0931A /* MyNavigatonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavigatonController.h; sourceTree = "<group>"; };
+		14660601165CC14B00A0931A /* MyNavigatonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavigatonController.m; sourceTree = "<group>"; };
+		14660607165CC49E00A0931A /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		14660608165CC49E00A0931A /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		1466060A165CC4A800A0931A /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		1466060B165CC4A800A0931A /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		1466060D165CC4B100A0931A /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		1466060E165CC4B200A0931A /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		14660610165CC50A00A0931A /* PresentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentingViewController.h; sourceTree = "<group>"; };
+		14660611165CC50A00A0931A /* PresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentingViewController.m; sourceTree = "<group>"; };
+		14660613165CC51600A0931A /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		14660614165CC51600A0931A /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		14660618165CC55700A0931A /* MyPopSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPopSegue.h; sourceTree = "<group>"; };
+		14660619165CC55700A0931A /* MyPopSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPopSegue.m; sourceTree = "<group>"; };
+		1466061B165CC56D00A0931A /* MyPushSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPushSegue.h; sourceTree = "<group>"; };
+		1466061C165CC56D00A0931A /* MyPushSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPushSegue.m; sourceTree = "<group>"; };
+		1466061E165CC6C500A0931A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		1466061F165CC6C500A0931A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				140E832D165C98C100CAA835 /* QuartzCore.framework in Frameworks */,
 				140F7433165ADC5900E8D912 /* UIKit.framework in Frameworks */,
 				140F7435165ADC5900E8D912 /* Foundation.framework in Frameworks */,
 				140F7437165ADC5900E8D912 /* CoreGraphics.framework in Frameworks */,
@@ -82,6 +106,7 @@
 		140F7431165ADC5900E8D912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				140E832C165C98C100CAA835 /* QuartzCore.framework */,
 				140F7432165ADC5900E8D912 /* UIKit.framework */,
 				140F7434165ADC5900E8D912 /* Foundation.framework */,
 				140F7436165ADC5900E8D912 /* CoreGraphics.framework */,
@@ -92,17 +117,13 @@
 		140F7438165ADC5900E8D912 /* iOS6_customSegue */ = {
 			isa = PBXGroup;
 			children = (
+				14660617165CC52000A0931A /* Push/Pop */,
+				14660616165CC51E00A0931A /* Modal */,
 				140F7441165ADC5900E8D912 /* AppDelegate.h */,
 				140F7442165ADC5900E8D912 /* AppDelegate.m */,
+				1466061E165CC6C500A0931A /* RootViewController.h */,
+				1466061F165CC6C500A0931A /* RootViewController.m */,
 				140F744A165ADC5900E8D912 /* MainStoryboard.storyboard */,
-				140F7455165ADCB700E8D912 /* SourceViewController.h */,
-				140F7456165ADCB700E8D912 /* SourceViewController.m */,
-				140F7458165ADCC000E8D912 /* DestinationViewController.h */,
-				140F7459165ADCC000E8D912 /* DestinationViewController.m */,
-				140F745B165ADDBB00E8D912 /* MyPresentingSegue.h */,
-				140F745C165ADDBB00E8D912 /* MyPresentingSegue.m */,
-				140F745E165ADEDD00E8D912 /* MyDismissingSegue.h */,
-				140F745F165ADEDD00E8D912 /* MyDismissingSegue.m */,
 				140F7439165ADC5900E8D912 /* Supporting Files */,
 			);
 			path = iOS6_customSegue;
@@ -120,6 +141,40 @@
 				140F7448165ADC5900E8D912 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14660616165CC51E00A0931A /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				140F745B165ADDBB00E8D912 /* MyPresentingSegue.h */,
+				140F745C165ADDBB00E8D912 /* MyPresentingSegue.m */,
+				140F745E165ADEDD00E8D912 /* MyDismissingSegue.h */,
+				140F745F165ADEDD00E8D912 /* MyDismissingSegue.m */,
+				14660610165CC50A00A0931A /* PresentingViewController.h */,
+				14660611165CC50A00A0931A /* PresentingViewController.m */,
+				14660613165CC51600A0931A /* PresentedViewController.h */,
+				14660614165CC51600A0931A /* PresentedViewController.m */,
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		14660617165CC52000A0931A /* Push/Pop */ = {
+			isa = PBXGroup;
+			children = (
+				1466061B165CC56D00A0931A /* MyPushSegue.h */,
+				1466061C165CC56D00A0931A /* MyPushSegue.m */,
+				14660618165CC55700A0931A /* MyPopSegue.h */,
+				14660619165CC55700A0931A /* MyPopSegue.m */,
+				14660600165CC14B00A0931A /* MyNavigatonController.h */,
+				14660601165CC14B00A0931A /* MyNavigatonController.m */,
+				14660607165CC49E00A0931A /* FirstViewController.h */,
+				14660608165CC49E00A0931A /* FirstViewController.m */,
+				1466060A165CC4A800A0931A /* SecondViewController.h */,
+				1466060B165CC4A800A0931A /* SecondViewController.m */,
+				1466060D165CC4B100A0931A /* ThirdViewController.h */,
+				1466060E165CC4B200A0931A /* ThirdViewController.m */,
+			);
+			name = Push/Pop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +245,17 @@
 			files = (
 				140F743F165ADC5900E8D912 /* main.m in Sources */,
 				140F7443165ADC5900E8D912 /* AppDelegate.m in Sources */,
-				140F7457165ADCB700E8D912 /* SourceViewController.m in Sources */,
-				140F745A165ADCC000E8D912 /* DestinationViewController.m in Sources */,
 				140F745D165ADDBB00E8D912 /* MyPresentingSegue.m in Sources */,
 				140F7460165ADEDD00E8D912 /* MyDismissingSegue.m in Sources */,
+				14660602165CC14B00A0931A /* MyNavigatonController.m in Sources */,
+				14660609165CC49E00A0931A /* FirstViewController.m in Sources */,
+				1466060C165CC4A800A0931A /* SecondViewController.m in Sources */,
+				1466060F165CC4B200A0931A /* ThirdViewController.m in Sources */,
+				14660612165CC50A00A0931A /* PresentingViewController.m in Sources */,
+				14660615165CC51700A0931A /* PresentedViewController.m in Sources */,
+				1466061A165CC55700A0931A /* MyPopSegue.m in Sources */,
+				1466061D165CC56D00A0931A /* MyPushSegue.m in Sources */,
+				14660620165CC6C500A0931A /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +372,7 @@
 				140F7454165ADC5900E8D912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
