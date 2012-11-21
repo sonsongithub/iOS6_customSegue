@@ -21,4 +21,9 @@
 - (IBAction)close:(UIStoryboardSegue*)segue {	
 }
 
+- (void)viewDidLoad {
+	NSLog(@"SourceViewController - viewDidLoad");
+	[super viewDidLoad];
+}
+
 @end

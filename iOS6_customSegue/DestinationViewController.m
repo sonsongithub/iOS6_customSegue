@@ -14,4 +14,19 @@
 
 @implementation DestinationViewController
 
+- (void)viewDidLoad {
+	NSLog(@"DestinationViewController - viewDidLoad");
+	[super viewDidLoad];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+	NSLog(@"DestinationViewController - viewWillAppear");
+	[super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	NSLog(@"DestinationViewController - viewDidAppear");
+	[super viewDidAppear:animated];
+}
+
 @end

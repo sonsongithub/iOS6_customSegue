@@ -11,7 +11,8 @@
 @implementation MyDismissingSegue
 
 - (void)perform {
-	[self.sourceViewController dismissViewControllerAnimated:YES completion:nil];
+	[self.sourceViewController dismissViewControllerAnimated:YES
+												  completion:nil];
 }
 
 @end

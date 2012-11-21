@@ -25,11 +25,27 @@
                                     <segue destination="MMr-A6-38k" kind="custom" customClass="MyPresentingSegue" id="HLo-pn-5dD"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-4b-Izp">
+                                <items>
+                                    <navigationItem title="Title" id="J1S-xc-NZ8"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAi-KL-lOG">
+                                <items>
+                                    <barButtonItem title="Item" id="s0j-g6-4Wm"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wgY-4b-Izp" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="1BV-Kc-NOT"/>
+                            <constraint firstItem="MAi-KL-lOG" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="7e6-lI-UZj"/>
+                            <constraint firstItem="wgY-4b-Izp" firstAttribute="centerX" secondItem="EwI-Rf-ePp" secondAttribute="centerX" type="default" id="9sv-US-vC6"/>
+                            <constraint firstItem="MAi-KL-lOG" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="G7f-Vh-s02"/>
+                            <constraint firstItem="wgY-4b-Izp" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="H8j-v0-Sni"/>
+                            <constraint firstItem="MAi-KL-lOG" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="X4N-Mq-YIr"/>
+                            <constraint firstItem="wgY-4b-Izp" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="g8r-r9-HpK"/>
                             <constraint firstItem="EwI-Rf-ePp" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="pkI-rp-yow"/>
-                            <constraint firstItem="EwI-Rf-ePp" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="wfJ-y0-6Yw"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -58,11 +74,27 @@
                                     <segue destination="2" kind="custom" customClass="MyDismissingSegue" id="Cto-nU-MI2"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-UT-7fI">
+                                <items>
+                                    <navigationItem title="Title" id="BYX-W6-4dl"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJr-rc-ev7">
+                                <items>
+                                    <barButtonItem title="Item" id="N6b-Zk-lEa"/>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="VlK-UT-7fI" firstAttribute="centerX" secondItem="KRv-qe-CkC" secondAttribute="centerX" type="default" id="2mO-0g-3M0"/>
+                            <constraint firstItem="VlK-UT-7fI" firstAttribute="trailing" secondItem="Rdm-V3-vHF" secondAttribute="trailing" type="default" id="4to-cz-ox0"/>
                             <constraint firstItem="KRv-qe-CkC" firstAttribute="top" secondItem="Rdm-V3-vHF" secondAttribute="top" constant="252" id="Jrc-pW-m2q"/>
-                            <constraint firstItem="KRv-qe-CkC" firstAttribute="centerX" secondItem="Rdm-V3-vHF" secondAttribute="centerX" type="default" id="we9-at-men"/>
+                            <constraint firstItem="VlK-UT-7fI" firstAttribute="leading" secondItem="Rdm-V3-vHF" secondAttribute="leading" type="default" id="S0r-ox-pH3"/>
+                            <constraint firstItem="lJr-rc-ev7" firstAttribute="trailing" secondItem="Rdm-V3-vHF" secondAttribute="trailing" type="default" id="c8n-pW-dwg"/>
+                            <constraint firstItem="lJr-rc-ev7" firstAttribute="bottom" secondItem="Rdm-V3-vHF" secondAttribute="bottom" type="default" id="gcr-jK-MSj"/>
+                            <constraint firstItem="lJr-rc-ev7" firstAttribute="leading" secondItem="Rdm-V3-vHF" secondAttribute="leading" type="default" id="gfy-3G-KNP"/>
+                            <constraint firstItem="VlK-UT-7fI" firstAttribute="top" secondItem="Rdm-V3-vHF" secondAttribute="top" type="default" id="uLB-Rk-gvR"/>
                         </constraints>
                     </view>
                 </viewController>
