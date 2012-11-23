@@ -10,4 +10,10 @@
 
 @implementation MyPopSegue
 
+- (void)perform {
+	UIViewController* source = self.sourceViewController;
+	[source.navigationController popToViewController:self.destinationViewController
+											animated:NO];
+}
+
 @end

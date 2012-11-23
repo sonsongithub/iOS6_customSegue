@@ -10,4 +10,10 @@
 
 @implementation MyPushSegue
 
+- (void)perform {
+	UIViewController* source = self.sourceViewController;
+	[source.navigationController pushViewController:self.destinationViewController
+										   animated:NO];
+}
+
 @end

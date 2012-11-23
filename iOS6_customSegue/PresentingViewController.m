@@ -16,12 +16,23 @@
 
 @implementation PresentingViewController
 
+- (UIViewController*)viewControllerForUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender {
+	NSLog(@"%@ - viewControllerForUnwindSegueAction:fromViewController:withSender", self);
+	return [super viewControllerForUnwindSegueAction:action fromViewController:fromViewController withSender:sender];
+}
+
 - (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController
 									  fromViewController:(UIViewController *)fromViewController
 											  identifier:(NSString *)identifier {
-	return [[MyDismissingSegue alloc] initWithIdentifier:identifier
-												  source:fromViewController
-											 destination:toViewController];
+	NSLog(@"%@ - segueForUnwindingToViewController:fromViewController:identifier", self);
+	
+	if ([identifier isEqualToString:@"dissmissPresentedViewController"])
+		return [[MyDismissingSegue alloc] initWithIdentifier:identifier
+													  source:fromViewController
+												 destination:toViewController];
+	return [super segueForUnwindingToViewController:toViewController
+								 fromViewController:fromViewController
+										 identifier:identifier];
 }
 
 - (IBAction)dissmissPresentedViewController:(UIStoryboardSegue*)segue {

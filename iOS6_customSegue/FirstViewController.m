@@ -17,4 +17,9 @@
 - (IBAction)popToFirstViewController:(UIStoryboardSegue*)segue {
 }
 
+- (BOOL)canPerformUnwindSegueAction:(SEL)action fromViewController:(UIViewController *)fromViewController withSender:(id)sender {
+	NSLog(@"%@ - canPerformUnwindSegueAction:fromViewController:withSender", self);
+	return [super canPerformUnwindSegueAction:action fromViewController:fromViewController withSender:sender];
+}
+
 @end

@@ -8,27 +8,43 @@
 
 #import "MyNavigatonController.h"
 
+#import "MyPopSegue.h"
+
 @interface MyNavigatonController ()
 
 @end
 
 @implementation MyNavigatonController
 
-- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier {
-	NSLog(@"%@", identifier);
-	if ([identifier isEqualToString:@"backFromSecond"]) {
-		return [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^(){
-			[self popToViewController:toViewController animated:NO];
-		}];
-	}
-	else if ([identifier isEqualToString:@"backFromThird"]) {
-		return [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^(){
-			[self popToViewController:toViewController animated:YES];
-		}];
-	}
-	return [UIStoryboardSegue segueWithIdentifier:identifier source:fromViewController destination:toViewController performHandler:^(){
-		[self popToViewController:toViewController animated:YES];
-	}];
+- (UIViewController*)viewControllerForUnwindSegueAction:(SEL)action
+									 fromViewController:(UIViewController *)fromViewController
+											 withSender:(id)sender {
+	NSLog(@"%@ - viewControllerForUnwindSegueAction:fromViewController:withSender", self);
+	return [super viewControllerForUnwindSegueAction:action
+								  fromViewController:fromViewController
+										  withSender:sender];
+}
+
+- (BOOL)canPerformUnwindSegueAction:(SEL)action
+				 fromViewController:(UIViewController *)fromViewController
+						 withSender:(id)sender {
+	NSLog(@"%@ - canPerformUnwindSegueAction:fromViewController:withSender", self);
+	return [super canPerformUnwindSegueAction:action
+						   fromViewController:fromViewController
+								   withSender:sender];
+}
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController
+									  fromViewController:(UIViewController *)fromViewController
+											  identifier:(NSString *)identifier {
+	NSLog(@"%@ - segueForUnwindingToViewController:fromViewController:identifier", self);
+	if ([identifier isEqualToString:@"popToFirstViewController"])
+		return [[MyPopSegue alloc] initWithIdentifier:identifier
+											   source:fromViewController
+										  destination:toViewController];
+	return [super segueForUnwindingToViewController:toViewController
+								 fromViewController:fromViewController
+										 identifier:identifier];
 }
 
 @end
